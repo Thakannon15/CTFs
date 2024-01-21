@@ -39,5 +39,5 @@ By integrating these compliance and security controls into their cybersecurity s
    - Configure FTP servers securely to minimize the attack surface.
 
  ## 10. Monitoring and Logging:
-    - Monitor FTP server logs for unusual activities that might indicate an attack or an attempt to exploit vulnerabilities.
-    - Ensure logs are comprehensive, tamper-proof, and regularly reviewed.
+   - Monitor FTP server logs for unusual activities that might indicate an attack or an attempt to exploit vulnerabilities.
+   - Ensure logs are comprehensive, tamper-proof, and regularly reviewed.
