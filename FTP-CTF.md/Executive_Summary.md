@@ -1,5 +1,3 @@
-# CTF Executive Summary: Exploiting the FTP Service
-
 ## Executive Summary
 This report outlines the methodology and results of a Capture The Flag (CTF) challenge that focused on exploiting the File Transfer Protocol (FTP) service, conducted on the Hack The Box platform. The challenge was a practical exercise in applying cybersecurity techniques for network enumeration and exploitation, with a particular emphasis on understanding and leveraging vulnerabilities within the FTP service.
 
