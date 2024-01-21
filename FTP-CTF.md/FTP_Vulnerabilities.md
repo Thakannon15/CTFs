@@ -1,4 +1,4 @@
-# Top Vulnerabilities in FTP Service
+# FTP Vulnerabilities Overview
 
 The File Transfer Protocol (FTP) is a standard network protocol used for the transfer of files between a client and server on a computer network. FTP is built on a client-server model architecture and uses separate control and data connections between the client and the server. Initially designed in the 1970s, FTP is one of the oldest protocols for transferring files but is still widely used due to its simplicity and wide support.
 
