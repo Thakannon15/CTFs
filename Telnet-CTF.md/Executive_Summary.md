@@ -1,5 +1,3 @@
-# CTF Challenge Report: Exploiting the Telnet Service
-
 ## Executive Summary
 This report details my approach and methodology in successfully completing a CTF challenge focused on exploiting the Telnet service. The process began with a ping scan to ensure connectivity, followed by a comprehensive `nmap` scan using both `-sV` and `-sC` options for service identification and running default scripts, respectively. This exercise was part of a Hack The Box scenario, aimed at demonstrating practical skills in cybersecurity, particularly in network exploitation.
 
