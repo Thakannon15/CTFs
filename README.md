@@ -11,9 +11,6 @@
 ## How to Navigate
   Browse through the repository to find specific services of interest. Each folder provides a comprehensive look at the vulnerabilities commonly associated with that service, alongside practical examples from CTF challenges and hardening techniques.
 
-## Contributing
-  Contributions to enhance and expand the repository are highly encouraged. We welcome additions of new service folders, updates to vulnerability lists, and improvements to CTF solutions and security strategies. Check our [Contributing Guidelines](CONTRIBUTING.md) for more information on how to contribute.
-
 ## Usage and Disclaimer
   This repository is intended for educational purposes only. We emphasize the importance of ethical hacking and legal compliance in applying the skills and knowledge shared here.
 
