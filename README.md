@@ -8,9 +8,6 @@
 - **List of Common Vulnerabilities**: A compilation of the most common vulnerabilities associated with each service.
 - **Hardening Strategies**: Recommendations on how to secure the services against these vulnerabilities.
 
-## How to Navigate
-  Browse through the repository to find specific services of interest. Each folder provides a comprehensive look at the vulnerabilities commonly associated with that service, alongside practical examples from CTF challenges and hardening techniques.
-
 ## Usage and Disclaimer
   This repository is intended for educational purposes only. We emphasize the importance of ethical hacking and legal compliance in applying the skills and knowledge shared here.
 
