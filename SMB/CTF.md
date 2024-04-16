@@ -28,32 +28,26 @@ Once installed, we use smbclient to enumerate the share's contents. smbclient wi
 
 ### Using smbclient
 
-To connect to the remote share:
-
-smbclient //<target-ip>/sharename
-
+Use `-L` with smbclient to list available shares:
 
 - If prompted for a password, leave it blank and press Enter to attempt anonymous access.
 
-![Smbclient Usage](path/to/your/smbclient_usage_image.png)
-
-Use `-L` with smbclient to list available shares:
-
-smbclient -L //<target-ip>
+![Smbclient Usage](https://github.com/TheCyberVault/Capture-The-Flags/assets/141572056/39030a64-7b55-4db9-b6db-f13df5736afd)
 
 We discover shares like ADMIN$, C$, IPC$, and custom shares like WorkShares.
 
-![Smbclient Shares](path/to/your/smbclient_shares_image.png)
+![Smbclient Usage](https://github.com/TheCyberVault/Capture-The-Flags/assets/141572056/39030a64-7b55-4db9-b6db-f13df5736afd)
 
 ## Foothold
 
-We attempt to connect to each share, except IPC$, using smbclient without credentials to find misconfigured permissions.
+We attempt to connect to each share, except IPC$, using the command `smbclient \\\\{target_IP}\\share name` without credentials to find misconfigured permissions with smbclient.
 
 ### Accessing Shares
 
 Attempts to access ADMIN$ and C$ yield `NT_STATUS_ACCESS_DENIED`. However, connecting to WorkShares is successful.
 
-![WorkShares Access](path/to/your/workshares_access_image.png)
+![Accessing Shares](https://github.com/TheCyberVault/Capture-The-Flags/assets/141572056/4b40c8ce-654f-4163-a926-487a8a18291d)
+
 
 Within the smb shell, we use common commands to navigate and download files:
 
@@ -64,13 +58,17 @@ Within the smb shell, we use common commands to navigate and download files:
 
 Exploring the directories, we find `worknotes.txt` in Amy.J's directory and `flag.txt` in James.P's directory. We use `get` to download these files.
 
-![SMB Shell](path/to/your/smb_shell_image.png)
+![Amy.J](https://github.com/TheCyberVault/Capture-The-Flags/assets/141572056/ebb801a6-da0e-4693-a702-9c34f7aeb50d)
+
+![James.P](https://github.com/TheCyberVault/Capture-The-Flags/assets/141572056/a5b63913-26f5-4188-8766-d653b806ec97)
+
 
 ### Analyzing Files
 
 After exiting the smb shell, we examine the downloaded files. `worknotes.txt` might contain hints for further exploration, while `flag.txt` contains the required flag.
 
-![File Analysis](path/to/your/file_analysis_image.png)
+![File Analysis](https://github.com/TheCyberVault/Capture-The-Flags/assets/141572056/710d38d6-30e2-4f37-86b0-a7ef72f94f1f)
+
 
 Upon reviewing `flag.txt`, we submit the flag to complete the task for the Dancing machine.
 
